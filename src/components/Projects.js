@@ -13,28 +13,30 @@ export default function Projects() {
             Apps I've Built
           </h1>
         </div>
-        {projects.map((project, idx) => (
-          <div className={idx === 0 ? "w-full p-4" : "sm:w-1/3 w-100 p-4"}>
-            <a href={project.link} key={project.image}>
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4"> {/* Use CSS Grid here */}
+          {projects.map((project, idx) => (
+            <div className="p-4">
+              <a href={project.link} key={project.image}>
+                <div className="relative">
+                  <img
+                    alt="gallery"
+                    className="w-full object-cover object-center"
+                    src={project.image}
+                  />
+                  <div className="px-8 py-10 absolute inset-0 z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                      {project.subtitle}
+                    </h2>
+                    <h1 className="title-font text-lg font-medium text-white mb-3">
+                      {project.title}
+                    </h1>
+                    <p className="leading-relaxed">{project.description}</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        ))}
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
