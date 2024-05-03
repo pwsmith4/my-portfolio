@@ -13,12 +13,9 @@ export default function Projects() {
             Apps I've Built
           </h1>
         </div>
-        <div className="flex flex-wrap -m-4">
-          {projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4">
+        {projects.map((project, idx) => (
+          <div className={idx === 0 ? "w-full p-4" : "sm:w-1/3 w-100 p-4"}>
+            <a href={project.link} key={project.image}>
               <div className="flex relative">
                 <img
                   alt="gallery"
@@ -36,8 +33,8 @@ export default function Projects() {
                 </div>
               </div>
             </a>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
