@@ -1,6 +1,6 @@
 
 import React from "react";
-import emailjs from "emailjs-com";
+import * as emailjs from "emailjs-com"
 
 export default function Contact() {
     const [name, setName] = React.useState("");
@@ -18,7 +18,7 @@ export default function Contact() {
     function handleSubmit(e) {
       e.preventDefault();
     
-      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', { name, email, message }, 'YOUR_USER_ID')
+      emailjs.send('service_5ispset', 'template_4nbf2a8', { name, email, message }, '9fZHR9ROnIUmEkGGp')
         .then((response) => {
            console.log('SUCCESS!', response.status, response.text);
            alert("Message sent!");
