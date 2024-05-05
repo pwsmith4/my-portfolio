@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "React website allows users to add receipts from React Native app",
+    subtitle: "React and MongoDB",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+      "React website allows users to add receipts from React Native app. User Signup/Signin and Editting Account info is fully functional. Users can view their receipts. Website runs on server using Heroku and connecting to Amazon Web Services using MongoDB.",
+      image: "./project-1.gif",
+    link: "https://goodwill-6e7d7b58ff5d.herokuapp.com/",
   },
   {
     title: "React Tracks",
