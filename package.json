@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "npm install --force && your-other-build-commands-here && craco build",
+    "build": "npm install --force && craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
-    "postcss": "^7.0.36",
+    "postcss": "^8.1.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }
 }
