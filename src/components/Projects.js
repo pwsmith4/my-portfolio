@@ -15,7 +15,7 @@ export default function Projects() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4"> {/* Use CSS Grid here */}
           {projects.map((project, idx) => (
-            <div className="p-4">
+            <div className={idx === 0 ? "sm:col-span-3 p-4" : "p-4"}>
               <a href={project.link} key={project.image}>
                 <div className="relative">
                   <img
