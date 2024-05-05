@@ -1,5 +1,6 @@
 
 import React from "react";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
     const [name, setName] = React.useState("");
@@ -14,16 +15,18 @@ export default function Contact() {
         .join("&");
     }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
+    function handleSubmit(e) {
+      e.preventDefault();
+    
+      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', { name, email, message }, 'YOUR_USER_ID')
+        .then((response) => {
+           console.log('SUCCESS!', response.status, response.text);
+           alert("Message sent!");
+        }, (err) => {
+           console.log('FAILED...', err);
+           alert(err);
+        });
+    }
   
   return (
     <section id="contact" className="relative">
