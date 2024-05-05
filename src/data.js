@@ -8,28 +8,27 @@ export const projects = [
     link: "https://goodwill-6e7d7b58ff5d.herokuapp.com/",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "React Native app for companies to give receipts for customers",
+    subtitle: "React Native and MongoDB",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "React Native app for iOS and Android for companies to give receipts for customers. The app automatically connects to the last device that it succesfully printed to and allows employees to print, text, or email a receipt and send the receipt information to MongoDB for the React website to display.",
     image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://goodwill-6e7d7b58ff5d.herokuapp.com/",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "TimeOff Request App",
+    subtitle: ".NET Maui and Firebase",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "TimeOff Request App built with .NET Maui and Firebase. Users can request time off and managers can approve or deny requests. App runs on iOS and Android. Firebase is used to store user data and requests. App is built with .NET Maui and C#.",
     image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
+    title: "Habit Tracking App",
+    subtitle: ".NET Maui and Firebase",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Habit Tracking App built with .NET Maui and Firebase. Users can track their habits and see their progress. App runs on iOS and Android. Firebase is used to store user data and habits. App is built with .NET Maui and C#.",
     image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://performanceishaapanen.com/",
   },
 ];
 
