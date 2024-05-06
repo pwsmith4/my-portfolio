@@ -12,12 +12,16 @@ export default function Projects() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I've Built
           </h1>
+          <p>
+            Here are a few of the projects I've worked on. Click on the images to learn more.
+          </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4"> {/* Use CSS Grid here */}
           {projects.map((project, idx) => (
             <div className={idx === 0 ? "sm:col-span-3 p-4" : "p-4 h-full"}>
               <a href={project.link} key={project.image}>
                 <div className="relative h-full">
+                  <h2>{project.mainTitle}</h2>
                   <img
                     alt="gallery"
                     className="w-full h-full object-cover object-center object-left" // Add object-right here
