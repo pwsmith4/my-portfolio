@@ -15,8 +15,9 @@ export default function Contact() {
         .join("&");
     }
     const form = useRef();
-    
+
     function handleSubmit(e) {
+      sendEmail(e);
       const sendEmail = (e) => {
       e.preventDefault();
     
