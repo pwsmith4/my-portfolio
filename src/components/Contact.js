@@ -18,7 +18,7 @@ export default function Contact() {
     function handleSubmit(e) {
       e.preventDefault();
     
-      emailjs.send('service_5ispset', 'template_4nbf2a8', { name, email, message }, '9fZHR9ROnIUmEkGGp')
+      emailjs.send('service_5ispset', 'template_4nbf2a8', {}, '9fZHR9ROnIUmEkGGp')
         .then((response) => {
            console.log('SUCCESS!', response.status, response.text);
            alert("Message sent!");
