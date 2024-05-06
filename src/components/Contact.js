@@ -1,6 +1,6 @@
 
 import React from "react";
-import * as emailjs from "emailjs-com"
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const [name, setName] = React.useState("");
@@ -16,18 +16,22 @@ export default function Contact() {
     }
 
     function handleSubmit(e) {
+      const form = useRef();
+      const sendEmail = (e) => {
       e.preventDefault();
     
-      emailjs.send('service_5ispset', 'template_4nbf2a8', {}, '9fZHR9ROnIUmEkGGp')
-        .then((response) => {
-           console.log('SUCCESS!', response.status, response.text);
-           alert("Message sent!");
-        }, (err) => {
-           console.log('FAILED...', err);
-           alert(err);
-        });
-    }
-  
+      emailjs.sendForm('service_5ispset', 'template_4nbf2a8', form.current, {publicKey: '9fZHR9ROnIUmEkGGp'})
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      };
+    };
+
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -67,6 +71,7 @@ export default function Contact() {
         </div>
         <form
           netlify
+          ref={form}
           onSubmit={handleSubmit}
           name="contact"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
