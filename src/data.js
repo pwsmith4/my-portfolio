@@ -41,6 +41,6 @@ export const skills = [
   "React",
   "Java",
   "C#",
-  "Next.js",
-  "Node",
+  ".NET",
+  "React Native",
 ];
