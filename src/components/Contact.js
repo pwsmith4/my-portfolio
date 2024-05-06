@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, {useRef} from "react";
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -14,9 +14,9 @@ export default function Contact() {
         )
         .join("&");
     }
-
+    const form = useRef();
+    
     function handleSubmit(e) {
-      const form = useRef();
       const sendEmail = (e) => {
       e.preventDefault();
     
