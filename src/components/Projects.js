@@ -18,8 +18,8 @@ export default function Projects() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4"> {/* Use CSS Grid here */}
                 {projects.map((project, idx) => (
-                  <div className={idx === 0 ? "sm:col-span-3 p-4 relative" : "p-4 h-full relative"}>
-                  <a href={project.link} key={project.image}>
+  <div className={idx === 0 ? "sm:col-span-3 p-4 relative flex flex-col" : "p-4 relative flex flex-col"}>
+  <a href={project.link} key={project.image}>
               <div className="relative h-full">
                 <h1 className={idx === 0 ? "sm:text-2xl text-3xl font-small title-font mb-1 text-white mb-1" : "sm:text-1xl text-2.5xl font-small title-font mb-1 text-white mb-1"}>
                   {project.mainTitle}
