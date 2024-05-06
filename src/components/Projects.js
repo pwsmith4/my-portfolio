@@ -21,7 +21,7 @@ export default function Projects() {
             <div className={idx === 0 ? "sm:col-span-3 p-4" : "p-4 h-full"}>
               <a href={project.link} key={project.image}>
                 <div className="relative h-full">
-                <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white mb-2">
+                <h1 className="sm:text-4xl text-3xl font-small title-font mb-4 text-white mb-2">
                   {project.mainTitle}
                   </h1>
                   <img
