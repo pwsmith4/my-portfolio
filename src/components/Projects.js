@@ -21,7 +21,7 @@ export default function Projects() {
             <div className={idx === 0 ? "sm:col-span-3 p-4" : "p-4 h-full"}>
               <a href={project.link} key={project.image}>
                 <div className="relative h-full">
-                  <h2>{project.mainTitle}</h2>
+                  <h1 className="mb-2">{project.mainTitle}</h1>
                   <img
                     alt="gallery"
                     className="w-full h-full object-cover object-center object-left" // Add object-right here
