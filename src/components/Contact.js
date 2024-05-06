@@ -17,6 +17,7 @@ export default function Contact() {
     const form = useRef();
 
     function handleSubmit(e) {
+      console.log("submitting form");
       sendEmail(e);
       const sendEmail = (e) => {
       e.preventDefault();
