@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^5.9.0",
     "@emailjs/browser": "^4.3.3",
     "@heroicons/react": "^1.0.1",
     "autoprefixer": "^10.4.19",
@@ -16,9 +15,9 @@
     "tailwindcss": "^3.4.3"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "npm install --force && craco build",
-    "test": "craco test",
+    "start": "react-app-rewired start",
+    "build": "npm install --force && react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -26,5 +25,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.2.1"
   }
 }
