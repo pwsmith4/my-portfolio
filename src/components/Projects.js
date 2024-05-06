@@ -17,13 +17,13 @@ export default function Projects() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4"> {/* Use CSS Grid here */}
-          {projects.map((project, idx) => (
-            <div className={idx === 0 ? "sm:col-span-3 p-4" : "p-4 h-full"}>
-              <a href={project.link} key={project.image}>
-                <div className="relative h-full">
-                <h1 className="sm:text-1xl text-2.5xl font-small title-font mb-1 text-white mb-1">
+                {projects.map((project, idx) => (
+          <div className={idx === 0 ? "sm:col-span-3 p-4" : "p-4 h-full"}>
+            <a href={project.link} key={project.image}>
+              <div className="relative h-full">
+                <h1 className={idx === 0 ? "sm:text-2xl text-3xl font-small title-font mb-1 text-white mb-1" : "sm:text-1xl text-2.5xl font-small title-font mb-1 text-white mb-1"}>
                   {project.mainTitle}
-                  </h1>
+                </h1>
                   <img
                     alt="gallery"
                     className="w-full h-full object-cover object-center object-left mb-2" // Add object-right here
