@@ -41,11 +41,12 @@ export default function About() {
           and designing exceptional websites, applications, and
           everything in between.
         </p>
+        <br/>
         <div className="flex justify-center space-x-4">
-        <a href="https://github.com/pwsmith4/resume/blob/1e0c8a24a87bc030457768326a5ce4719fcc3d44/Smith%20Parker%20Resume.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+        <a href="https://github.com/pwsmith4/resume/blob/1e0c8a24a87bc030457768326a5ce4719fcc3d44/Smith%20Parker%20Resume.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
       View my resume
     </a>
-    <a href="https://www.linkedin.com/in/parkerwsmith/" target="_blank" rel="noopener noreferrer" className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+    <a href="https://www.linkedin.com/in/parkerwsmith/" target="_blank" rel="noopener noreferrer" className="ml-4 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
       Visit my LinkedIn
     </a>
       </div>
