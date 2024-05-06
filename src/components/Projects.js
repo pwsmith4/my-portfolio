@@ -21,12 +21,12 @@ export default function Projects() {
             <div className={idx === 0 ? "sm:col-span-3 p-4" : "p-4 h-full"}>
               <a href={project.link} key={project.image}>
                 <div className="relative h-full">
-                <h1 className="sm:text-4xl text-3xl font-small title-font mb-4 text-white mb-2">
+                <h1 className="sm:text-1xl text-2.5xl font-small title-font mb-1 text-white mb-1">
                   {project.mainTitle}
                   </h1>
                   <img
                     alt="gallery"
-                    className="w-full h-full object-cover object-center object-left" // Add object-right here
+                    className="w-full h-full object-cover object-center object-left mb-2" // Add object-right here
                     src={project.image}
                   />
                   <div className="px-8 py-10 absolute inset-0 z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
